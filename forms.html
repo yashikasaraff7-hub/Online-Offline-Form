@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  font-family: Arial, sans-serif;
+}
+
+/* FORM CONTAINER */
+form {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* HEADINGS */
+h2 {
+  text-align: center;
+  color: #ff4f7a;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* RADIO & CHECKBOX AREA */
+.options {
+  margin-bottom: 12px;
+}
+
+.options label {
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<form>
+<h2>Register</h2>
+
+<label>Name</label>
+<input type="text" placeholder="Enter name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter email">
+
+<!-- RADIO BUTTONS -->
+<div class="options">
+    <label>Gender:</label>
+    <label><input type="radio" name="gender"> Male</label>
+    <label><input type="radio" name="gender"> Female</label>
+</div>
+
+<!-- CHECKBOXES -->
+<div class="options">
+    <label>Interests:</label>
+    <label><input type="checkbox"> Coding</label>
+    <label><input type="checkbox"> Design</label>
+    <label><input type="checkbox"> Sports</label>
+</div>
+
+<button>Register</button>
+</form>
+
+</body>
+</html>
+
